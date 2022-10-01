@@ -1,0 +1,16 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@font-face {
+  font-family: "allura";
+  src: url("../../../../assets/fonts/allura-regular-webfont.woff") format("woff2"), url("../../../../assets/fonts/allura-regular-webfont.woff2") format("woff");
+}
+body {
+  scroll-behavior: smooth;
+}/*# sourceMappingURL=style.css.map */

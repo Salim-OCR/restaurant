@@ -1,0 +1,32 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'allura';
+    src: url('../../../../assets/fonts/allura-regular-webfont.woff') format('woff2'),
+        url('../../../../assets/fonts/allura-regular-webfont.woff2') format('woff');
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+// h1 {
+//     font-family: 'Poppins',
+//         sans-serif;
+// }
+
+// h2 {
+//     font-family: 'allura', cursive;
+// }
+
+// p {
+//     font-family: 'Roboto', sans-serif;
+//     text-transform: uppercase;
+// }
