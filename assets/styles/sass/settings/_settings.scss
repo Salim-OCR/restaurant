@@ -12,21 +12,20 @@
     src: url('../../../../assets/fonts/allura-regular-webfont.woff') format('woff2'),
         url('../../../../assets/fonts/allura-regular-webfont.woff2') format('woff');
 }
-
+.ftf-allura {
+    font-family: 'allura', sans-serif;
+}
+.color{
+    color: $color1;
+}
 body {
     scroll-behavior: smooth;
 }
+h1,h2,ul{
+    color: $color2;
+}
 
-// h1 {
-//     font-family: 'Poppins',
-//         sans-serif;
-// }
+li, a{
+    list-style-type: none;
+}
 
-// h2 {
-//     font-family: 'allura', cursive;
-// }
-
-// p {
-//     font-family: 'Roboto', sans-serif;
-//     text-transform: uppercase;
-// }
