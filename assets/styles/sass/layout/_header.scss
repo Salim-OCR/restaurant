@@ -2,43 +2,122 @@ header {
     height: 100vh;
     background: url("../img/bg-slider-06.jpg") center/cover;
 
+    @media screen and (max-width: 500px) {
+        height: 90vh;
+    }
+
     nav {
-        border: 1px solid white;
-        width: 90%;
+        width: 80%;
         margin: auto;
+        padding: 25px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
 
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+            justify-content: space-around;
+        }
+
         h2 {
             text-transform: capitalize;
-            font-size: clamp(2rem, 2.5vw, 3rem);
+            font-size: clamp(2.8rem, 2.9vw, 3rem);
+
+            @media screen and (max-width: 1200px) {
+                // font-size: 2.5rem;
+            }
         }
 
         ul {
             display: flex;
             flex-wrap: wrap;
             text-transform: uppercase;
-            font-size: clamp(.8rem, 1.1vw, 1.5rem);
+            font-size: clamp(.8rem, 1.1vw, 1.3rem);
+
+            @media screen and (max-width: 1200px) {
+                display: none;
+            }
 
             li {
-                padding: 0 35px;
+                margin: 0 25px;
                 font-weight: 100;
+                opacity: .9;
             }
+
         }
 
         .link-socials {
-            border: 1px solid white;
             width: 130px;
-            font-size: clamp(.8rem, 1.1vw, 1.5rem);
             display: flex;
             justify-content: space-around;
+            font-size: 1;
 
-            a{
+            @media screen and (max-width: 1200px) {
+                width: 130px;
+            }
+
+            a {
                 color: $color2;
             }
 
         }
     }
+
+    .titre-principal {
+        margin: 210px auto;
+
+        @media screen and (max-width: 500px) {
+            margin: 110px auto;
+        }
+
+        h1 {
+            font-size: clamp(2.7rem, 2.8vw, 3.1rem);
+            text-transform: uppercase;
+            letter-spacing: 1.1rem;
+            line-height: .85;
+
+            @media screen and (max-width: 500px) {
+                line-height: 2;
+                letter-spacing: .5rem;
+            }
+
+            span {
+                letter-spacing: .2rem;
+                text-transform: capitalize;
+
+                @media screen and (max-width: 500px) {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .icon-fork-knife {
+            background: url('../img/ic-plate-big.png') no-repeat center/cover;
+            height: 30px;
+            width: 30px;
+            margin: 80px auto 55px;
+
+            @media screen and (max-width: 500px) {
+                height: 35px;
+                width: 35px;
+                margin: 15px auto 40px;
+            }
+        }
+
+        p {
+            text-transform: uppercase;
+            color: $color2;
+            font-size: clamp(1rem, 1.1vw, 1.15rem);
+            letter-spacing: .53rem;
+            width: 50%;
+            margin: auto;
+
+            @media screen and (max-width: 500px) {
+                width: 80%;
+            }
+        }
+    }
+
+
 }

@@ -12,20 +12,45 @@
     src: url('../../../../assets/fonts/allura-regular-webfont.woff') format('woff2'),
         url('../../../../assets/fonts/allura-regular-webfont.woff2') format('woff');
 }
+
 .ftf-allura {
     font-family: 'allura', sans-serif;
 }
-.color{
+
+.color {
     color: $color1;
 }
+
 body {
     scroll-behavior: smooth;
+    background: darken(gray, 30);
 }
-h1,h2,ul{
+
+h1,
+h2,
+ul {
     color: $color2;
 }
 
-li, a{
+li,
+a {
     list-style-type: none;
 }
 
+img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.img-menu {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.icon-forkandknife{
+    background: url('../../../img/ic-cricle.png');
+    width: 50px;
+    height: 50px;
+}

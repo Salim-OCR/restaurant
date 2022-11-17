@@ -1,0 +1,63 @@
+.ceo {
+    position: relative;
+
+    &::after {
+        content: "";
+        background: url(../img/gmap.jpg) center/cover;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        left: 0;
+        bottom: -145px;
+        z-index: -1;
+    }
+
+    .ceo-container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 70px auto;
+        background: $color2;
+        position: relative;
+        padding: 70px;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            padding: 25px 0;
+        }
+
+        .blockquote {
+            line-height: 35px;
+            font-size: 1.2rem;
+
+            &::before {
+                content: "“";
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            &::after {
+                content: "”";
+                font-size: 2rem;
+                font-weight: bold;
+                padding: 10px;
+            }
+        }
+
+        .name {
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: 100;
+        }
+
+        .color {
+            font-size: 1.5rem;
+        }
+    }
+}

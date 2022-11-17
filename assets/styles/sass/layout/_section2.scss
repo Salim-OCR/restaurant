@@ -1,0 +1,122 @@
+.container-discover {
+    background: darken(gray, 30);
+    z-index: -2;
+    height: 100vh;
+    position: relative;
+
+    @media screen and (max-width: 1000px) {
+        height: 170vh;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+        padding-top: 30px;
+        font-weight: 100;
+
+        @media screen and (max-width: 1100px) {
+            font-size: 5rem;
+        }
+    }
+
+    .icon-forkandknife {
+        background: url(../img/ic-plate.png) no-repeat;
+        margin: 15px auto;
+        height: 50px;
+        width: 50px;
+
+        @media screen and (max-width: 1100px) {
+            transform: scale(1.7);
+            margin: 25px auto;
+        }
+    }
+
+    ul {
+        width: 60%;
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+        margin: 15px auto;
+
+        @media screen and (max-width: 600px) {
+            width: 90%;
+        }
+
+        li {
+            border-bottom: 1px solid $color2;
+            padding-bottom: 7px;
+            text-transform: capitalize;
+            font-size: 1.1rem;
+            font-weight: 100;
+        }
+    }
+
+    .menu-discover {
+        width: 70%;
+        max-width: 1200px;
+        border-top: 3px solid darken($color1, 14);
+        margin: 50px auto;
+        background: $color2;
+
+        @media screen and (max-width: 1100px) {
+            width: 75%;
+        }
+
+        @media screen and (max-width: 900px) {
+            width: 90%;
+        }
+
+        .menus {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @media screen and (max-width: 1000px) {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .menu {
+                display: grid;
+                grid-template-columns: 25% 60% 15%;
+                align-items: center;
+                margin: 15px 20px;
+                padding-bottom: 15px;
+                border-bottom: 1px dashed black;
+
+
+
+                .text-menu {
+                    h5 {
+                        text-align: left;
+                        text-transform: uppercase;
+
+                        @media screen and (max-width: 900px) {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    p {
+                        text-align: left;
+                        text-transform: capitalize;
+                    }
+                }
+
+                @media screen and (max-width: 900px) {
+                    .color {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .bg-menu {
+        position: absolute;
+        bottom: 0px;
+        z-index: -1;
+        height: 50vh;
+        width: 100%;
+        background: url("../img/bg-menu-01.jpg") no-repeat left top/cover;
+    }
+}
